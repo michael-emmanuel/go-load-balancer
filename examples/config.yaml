@@ -1,0 +1,22 @@
+# Example configuration. Every key is optional; omitted keys use the defaults.
+# Environment variables (LB_LISTEN_ADDR, LB_BACKENDS, LB_HEALTH_INTERVAL,
+# LB_HEALTH_TIMEOUT, LB_SHUTDOWN_TIMEOUT, LB_HEALTH_PATH, LB_FAILURE_THRESHOLD,
+# LB_RECOVERY_THRESHOLD) override values in this file.
+
+listen_addr: ":8080"
+
+backends:
+  - http://localhost:8081
+  - http://localhost:8082
+  - http://localhost:8083
+
+health_check_path: /health
+health_check_interval: 5s
+health_check_timeout: 2s       # must not exceed the interval
+
+# Consecutive failures before a healthy backend is ejected, and consecutive
+# successes before an ejected backend is readmitted.
+failure_threshold: 2
+recovery_threshold: 2
+
+shutdown_timeout: 15s
