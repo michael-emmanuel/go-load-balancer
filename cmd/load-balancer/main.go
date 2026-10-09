@@ -10,8 +10,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/example/load-balancer/internal/config"
-	"github.com/example/load-balancer/internal/server"
+	"github.com/michael-emmanuel/go-load-balancer/internal/config"
+	"github.com/michael-emmanuel/go-load-balancer/internal/server"
 )
 
 func main() {

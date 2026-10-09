@@ -7,14 +7,16 @@ import (
 	"net"
 	"net/http"
 	"net/http/httptest"
+	"net/url"
+	"reflect"
 	"strings"
 	"sync"
 	"testing"
 	"time"
 
-	"github.com/example/load-balancer/internal/balancer"
-	"github.com/example/load-balancer/internal/proxy"
-	"github.com/example/load-balancer/internal/testutil"
+	"github.com/michael-emmanuel/go-load-balancer/internal/balancer"
+	"github.com/michael-emmanuel/go-load-balancer/internal/proxy"
+	"github.com/michael-emmanuel/go-load-balancer/internal/testutil"
 )
 
 type env struct {
@@ -167,7 +169,7 @@ func TestForwardsMethodPathQueryHeadersAndBody(t *testing.T) {
 		if echo.Path != "/a/b" {
 			t.Errorf("path = %q", echo.Path)
 		}
-		if echo.Query != "x=1&y=two&x=3" {
+		if got, _ := url.ParseQuery(echo.Query); !reflect.DeepEqual(got, url.Values{"x": {"1", "3"}, "y": {"two"}}) {
 			t.Errorf("query = %q", echo.Query)
 		}
 		if echo.Body != body {

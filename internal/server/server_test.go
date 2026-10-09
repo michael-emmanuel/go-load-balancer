@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/example/load-balancer/internal/config"
-	"github.com/example/load-balancer/internal/server"
-	"github.com/example/load-balancer/internal/testutil"
+	"github.com/michael-emmanuel/go-load-balancer/internal/config"
+	"github.com/michael-emmanuel/go-load-balancer/internal/server"
+	"github.com/michael-emmanuel/go-load-balancer/internal/testutil"
 )
 
 type running struct {

@@ -13,7 +13,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/example/load-balancer/internal/balancer"
+	"github.com/michael-emmanuel/go-load-balancer/internal/balancer"
 )
 
 // Options configures the outbound transport.

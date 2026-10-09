@@ -122,7 +122,7 @@ git clone <this repository> && cd load-balancer
 make build
 ```
 
-The module path is `github.com/michael-emmanuel/load-balancer`
+The module path is `github.com/michael-emmanuel/go-load-balancer`
 
 ## Running the Demo
 

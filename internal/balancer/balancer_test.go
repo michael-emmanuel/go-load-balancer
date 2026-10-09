@@ -5,8 +5,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/example/load-balancer/internal/balancer"
-	"github.com/example/load-balancer/internal/testutil"
+	"github.com/michael-emmanuel/go-load-balancer/internal/balancer"
+	"github.com/michael-emmanuel/go-load-balancer/internal/testutil"
 )
 
 var hosts = []string{"http://a.test", "http://b.test", "http://c.test"}

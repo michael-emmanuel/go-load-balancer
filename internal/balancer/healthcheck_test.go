@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/example/load-balancer/internal/balancer"
-	"github.com/example/load-balancer/internal/testutil"
+	"github.com/michael-emmanuel/go-load-balancer/internal/balancer"
+	"github.com/michael-emmanuel/go-load-balancer/internal/testutil"
 )
 
 func setup(t *testing.T, n int, timeout time.Duration, opts balancer.Options) ([]*testutil.Backend, *balancer.Pool, *balancer.HealthChecker) {

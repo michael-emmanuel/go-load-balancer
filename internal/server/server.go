@@ -13,9 +13,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/example/load-balancer/internal/balancer"
-	"github.com/example/load-balancer/internal/config"
-	"github.com/example/load-balancer/internal/proxy"
+	"github.com/michael-emmanuel/go-load-balancer/internal/balancer"
+	"github.com/michael-emmanuel/go-load-balancer/internal/config"
+	"github.com/michael-emmanuel/go-load-balancer/internal/proxy"
 )
 
 // Server is the load balancer process: an HTTP listener, a backend pool, a

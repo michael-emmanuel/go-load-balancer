@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/example/load-balancer/internal/config"
+	"github.com/michael-emmanuel/go-load-balancer/internal/config"
 )
 
 func TestDefaultsAreValid(t *testing.T) {
