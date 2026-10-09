@@ -2,7 +2,7 @@
 
 A small HTTP load balancer built from first principles in Go, using only the standard library. It implements round-robin selection, active health checks with failure ejection and recovery, reverse proxying, graceful shutdown, and basic observability, and it is organized so the design reasoning is as inspectable as the code.
 
-This is an educational systems project. It deliberately implements a simplified subset of what production load balancers and reverse proxies (NGINX, Envoy, HAProxy, cloud load balancers) provide. It is not intended for production deployment.
+This is an educational systems project. It deliberately implements a simplified subset of what production load balancers and reverse proxies (NGINX, Envoy, HAProxy, cloud load balancers) provide.
 
 ## Overview
 
