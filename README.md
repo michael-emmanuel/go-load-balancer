@@ -122,7 +122,7 @@ git clone <this repository> && cd load-balancer
 make build
 ```
 
-The module path is `github.com/example/load-balancer`; change it in `go.mod` and imports if you fork.
+The module path is `github.com/michael-emmanuel/load-balancer`
 
 ## Running the Demo
 
