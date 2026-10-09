@@ -1,3 +1,3 @@
-module github.com/example/load-balancer
+module github.com/michael-emmanuel/load-balancer
 
 go 1.22
